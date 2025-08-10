@@ -10,7 +10,7 @@ This project sets up a local Apache Kafka instance using Docker.
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Subratlitu/fraud-detector.git
-   cd kafka-docker
+   cd fraud-detector
 
 ## Start Kafka & Zookeeper
 docker-compose up -d
