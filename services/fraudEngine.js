@@ -1,7 +1,4 @@
-// services/fraudEngine.js
 const logger = require('../utils/logger');
-const inMemoryStore = require('../store/inMemoryStore');
-const { mongoose } = require('../utils/mongo');
 const  FraudModel = require('../models/fraud')
 
 const WINDOW_MS = 10 * 1000; // 10 seconds
@@ -63,7 +60,7 @@ async function processTransaction(tx) {
       detectedAt: flagged.detectedAt.toISOString()
     });
 
-    // Save in-memory
+    // Save in-memory currently not using 
     // await inMemoryStore.save(flagged);
 
     // Persist to Mongo db

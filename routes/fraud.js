@@ -1,7 +1,6 @@
 // routes/frauds.js
 const express = require('express');
 const router = express.Router();
-const inMemoryStore = require('../store/inMemoryStore');
 const { mongoose } = require('../utils/mongo');
 let FraudModel;
 try { FraudModel = require('../models/fraud'); } catch (e) { FraudModel = null; }
